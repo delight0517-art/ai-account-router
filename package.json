@@ -1,0 +1,23 @@
+{
+  "name": "priority-chain-router",
+  "version": "1.1.15",
+  "description": "Local Sovereign Account Library & Auto-Failover Priority Engine (OpenRouter-compatible)",
+  "main": "src/index.js",
+  "bin": {
+    "chain-router": "bin/server.js"
+  },
+  "scripts": {
+    "start": "node bin/server.js",
+    "test": "node tests/local-routing.test.js && node tests/engine.test.js && node tests/account-chain.test.js && node tests/profile-registration.test.js && node tests/provider-login.test.js && node tests/keychain-storage.test.js && node tests/shared-account-catalog.test.js && node tests/dashboard.test.js",
+    "build:macos": "bash scripts/build-macos-app.sh",
+    "install:background": "bash scripts/install-background-service.sh"
+  },
+  "keywords": [
+    "ai-router",
+    "account-changer",
+    "openai-compatible",
+    "quota-failover"
+  ],
+  "author": "Rogan Kim",
+  "license": "MIT"
+}
